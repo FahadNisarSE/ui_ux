@@ -20,19 +20,19 @@ export default function Home() {
   return (
     <div className='bg-[#00040F] w-full overflow-hidden'>
       <div className={`${Styles.paddingX} ${Styles.flexCenter}`}>
-        <div className={`${Styles.boxWidth}`}>
+        <div className='xl:max-w-[1280px] w-full'>
           <Navbar />
         </div>
       </div>
 
       <div className={`bg-[#00040F] ${Styles.flexStart}`}>
-        <div className={`${Styles.boxWidth}`}>
+        <div className='xl:max-w-[1280px] w-full'>
           <Hero />
         </div>
       </div>
 
       <div className={`bg-[#00040F] ${Styles.paddingX} ${Styles.flexStart}`}>
-        <div className={`${Styles.boxWidth}`}>
+        <div className='xl:max-w-[1280px] w-full'>
           <Stats />
           <Business />
           <Billing />

@@ -1,15 +1,14 @@
 import Image from "next/image"
 
-import styles from "../styles/Style"
 import { logo } from "../assets"
 import { footerLinks, socialMedia } from "../Constants"
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col sm:mt-0 mt-16`}>
-    <div className={`${styles.flexStart} lg:flex-row flex-col mb-8 w-full gap-4`}>
+  <section className={`flex justify-center items-center sm:py-16 py-6 flex-col sm:mt-0 mt-16`}>
+    <div className={`flex justify-center items-start lg:flex-row flex-col mb-8 w-full gap-4`}>
       <div className="flex-1 flex flex-col items-start justify-start mr-10">
         <Image src={logo} alt='hoobank' width={266} height={72} className="object-contain" />
-        <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>A new way to make the payments easy, reliable and secure.</p>
+        <p className="font-poppins font-normal text-gray-400 text-[18px] leading-[30.8px] mt-4 max-w-[310px]">A new way to make the payments easy, reliable and secure.</p>
       </div>
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap sm:mt-5 mt-10">
         {
